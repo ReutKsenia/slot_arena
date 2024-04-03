@@ -1,0 +1,58 @@
+:root {
+    /** Colors */
+    --color-light: #ffffff;
+    --color-dark: #000000;
+  
+    --color-primary: #21212A;
+    --color-primary-hover: #282832;
+    --color-primary-disabled: #26262C;
+    --color-accent: #FFE819;
+  
+    --color-bg-main: var(--color-primary);
+  
+    --color-text-main: var(--color-light);
+    --color-text-disabled: #464851;
+    --color-text-negative: #de1010;
+  
+    --color-negative: #ff3b30;
+  
+    /** Fonts */
+    --font-size-subtitle: 2rem;
+    --font-size-text: 1.6rem;
+    --font-size-label: 1.4rem;
+    --font-size-error: 1.2rem;
+    --font-size-icon: 2.4rem;
+  
+    --line-height-subtitle: 2.4rem;
+    --line-height-text: 1.8rem;
+  
+    --letter-spacing: 0.15px;
+
+    --box-shadow-default: -2px -3px 5px 0 rgba(255, 255, 255, 0.25), 4px 5px 4px 0 rgba(0, 0, 0, 0.3);
+    --box-shadow-inset: -2px -3px 5px 0 rgba(255, 255, 255, 0.25) inset, 4px 5px 4px 0 rgba(0, 0, 0, 0.3) inset;
+    --box-shadow-error: -2px -3px 5px 0 rgba(222, 16, 16, 0.50) inset, 4px 5px 4px 0 rgba(0, 0, 0, 0.3) inset;
+  
+    /** Radius */
+    --radius-lesser: 5px;
+    --radius-normal: 10px;
+    --radius-smooth: 15px;
+  
+    /** Size (width, height) */
+    --height-sidebar: 200px;
+
+    @include only-mobile {
+      --height-sidebar: 150px;
+    }
+
+    /** Paddings */
+    --main-horisontal-padding: 40px;
+  
+    @include only-tablet {
+      --main-horisontal-padding: 24px;
+    }
+  
+    @include only-mobile {
+      --main-horisontal-padding: 16px;
+    }
+  }
+  

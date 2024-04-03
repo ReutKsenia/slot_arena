@@ -1,0 +1,133 @@
+.field-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+    color: var(--color-light);
+  }
+  
+  .field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__label {
+      font-size: var(--font-size-label);
+      margin-bottom: 5px;
+    }
+
+    &__input-body {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      background-color: var(--color-primary);
+      border: none;
+      border-radius: var(--radius-normal);
+      box-shadow: var(--box-shadow-inset);
+      color: var(--color-light);
+      font-size: var(--font-size-text);
+    }
+
+    &__input {
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      padding: 15px 20px;
+      overflow: hidden;
+      font-weight: normal;
+      font-size: var(--font-size-text);
+      line-height: var(--line-height-text);
+      color: var(--color-text-main);
+      text-overflow: ellipsis;
+      letter-spacing: var(--letter-spacing);
+      background-color: transparent;
+      border: none;
+      border-radius: var(--radius-normal);
+    }
+  
+    &__input:focus ~ &__placeholder {
+      color: var(--color-primary);
+    }
+  
+    &__input:disabled ~ &__placeholder {
+      color: var(--color-text-disabled);
+    }
+  
+    &__input::placeholder {
+      opacity: 0.4;
+      font-weight: normal;
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+    }
+  
+    &--disabled &__input,
+    &--disabled &__input::placeholder {
+      color: var(--color-text-disabled);
+    }
+  
+    &--error &__input-body {
+        box-shadow: var(--box-shadow-error);
+    }
+  
+    &--error &__error-message {
+      color: var(--color-text-negative);
+    }
+
+    &__icon-body {
+      --icon-color-default: var(--color-light);
+      --icon-color-active: var(--color-light);
+      --icon-color-hover: var(--color-light);
+      --icon-color-focus-visible: var(--color-light);
+  
+      display: flex;
+      padding: 0;
+      font-size: var(--font-size-icon);
+      color: var(--icon-color-default);
+      background-color: transparent;
+      border-radius: 50%;
+  
+      &:hover {
+        color: var(--icon-color-hover);
+      }
+  
+      &--eye {
+        --icon-color-default: var(--color-light);
+        --icon-color-hover: var(--color-light);
+        --icon-color-focus-visible: var(--color-light);
+  
+        &:focus-visible {
+          outline-offset: 4px;
+        }
+  
+        &:active {
+          color: var(--icon-color-active);
+          transform: scale(0.9);
+        }
+      }
+    }
+
+    &--append &__input {
+      padding-right: 10px;
+    }
+
+    &__icons-list {
+      display: flex;
+      gap: 10px;
+      padding-right: 15px;
+    }
+  
+    &__icon {
+      transition: color 0.2s ease;
+    }
+
+    &__error-message {
+      font-size: var(--font-size-error);
+      margin-top: 0px;
+      position: absolute;
+      bottom: -18px;
+    }
+  }

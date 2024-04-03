@@ -1,0 +1,36 @@
+.protected {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &__main {
+        height: 100%;
+        width: calc(100vw - var(--height-sidebar));
+    }
+
+    .list-loader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .game-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 16px;
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+
+    .load-more-btn-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .load-more-btn {
+        width: 300px;
+    }
+}

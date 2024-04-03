@@ -1,0 +1,25 @@
+.toasts {
+    position: fixed;
+    z-index: 105;
+    bottom: 30px;
+    left: 50%;
+    visibility: hidden;
+    opacity: 0;
+    width: calc(100% - var(--main-horisontal-padding) * 2);
+    max-width: 1080px;
+    transform: translate(-50%, 100%);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition-property: transform, visibility, opacity;
+  
+    &--visible {
+      visibility: visible;
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+  
+    &__item {
+      margin: 5px 0;
+      overflow: auto;
+    }
+}
+  
