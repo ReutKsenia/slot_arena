@@ -1,20 +1,25 @@
-# evenbet-gaming-test
 
-This template should help get you started developing with Vue 3 in Vite.
+# Vue slot arena
 
-## Recommended IDE Setup
+## ✨ Interface
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+</br>
 
-## Type Support for `.vue` Imports in TS
+| Login screen |  Main screen  |
+| :---------: | :--------: |
+| <img width="1128" alt="Снимок экрана 2024-04-04 в 12 30 45" src="https://github.com/ReutKsenia/slot_arena/assets/42972357/cbcba25b-fefb-45d9-9536-e3f92ada565a"> | <img width="1420" alt="Снимок экрана 2024-04-04 в 12 31 55" src="https://github.com/ReutKsenia/slot_arena/assets/42972357/bfae2f8c-31b7-4a0c-ad07-70bff01a1f5f"> |
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## ✨ Demo
+>https://reutksenia.github.io/slot_arena_site/
 
-## Customize configuration
+## ✨ Test login details
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+```
+login: richard
+password: poker
+```
 
-## Project Setup
+## ✨ Project setup (for developers)
 
 ```sh
 npm install
