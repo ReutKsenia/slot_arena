@@ -12,13 +12,6 @@ declare module 'vue' {
     BaseLoader: typeof import('./components/BaseLoader/BaseLoader.vue')['default']
     CloseButton: typeof import('./components/CloseButton/CloseButton.vue')['default']
     GameCard: typeof import('./components/GameCard/GameCard.vue')['default']
-    HelloWorld: typeof import('./components/HelloWorld.vue')['default']
-    IconCommunity: typeof import('./components/icons/IconCommunity.vue')['default']
-    IconDocumentation: typeof import('./components/icons/IconDocumentation.vue')['default']
-    IconEcosystem: typeof import('./components/icons/IconEcosystem.vue')['default']
-    IconSupport: typeof import('./components/icons/IconSupport.vue')['default']
-    IconTooling: typeof import('./components/icons/IconTooling.vue')['default']
-    Loader: typeof import('./components/BaseLoader/Loader.vue')['default']
     PasswordField: typeof import('./components/PasswordField/PasswordField.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
@@ -27,7 +20,5 @@ declare module 'vue' {
     TheSidebar: typeof import('./components/TheSidebar/TheSidebar.vue')['default']
     TheToastList: typeof import('./components/TheToastList/TheToastList.vue')['default']
     TheToastListItem: typeof import('./components/TheToastList/TheToastListItem.vue')['default']
-    TheWelcome: typeof import('./components/TheWelcome.vue')['default']
-    WelcomeItem: typeof import('./components/WelcomeItem.vue')['default']
   }
 }
